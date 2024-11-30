@@ -2,7 +2,7 @@
   "name": "agrivision",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001",
+  "proxy": "https://agrivision-task-bakcend.vercel.app/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
