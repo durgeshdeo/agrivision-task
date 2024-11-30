@@ -19,7 +19,7 @@ const PageComponents = () => {
     const fetchUsers = async () => {
       try {
         const response = await axios.get(
-          "https://agrivision-task-bakcend.vercel.app"
+          "https://agrivision-task-bakcend-26v27bmjv-durgeshs-projects-4fe5781a.vercel.app"
         );
         setUsers(response.data);
       } catch (error) {
