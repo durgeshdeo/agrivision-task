@@ -11,8 +11,9 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin:
+    origin: [
       "https://agrivision-task-bakcend.vercel.app/?vercelToolbarCode=XeJJMERGtQEfhZe",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
