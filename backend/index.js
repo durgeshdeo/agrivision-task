@@ -14,7 +14,6 @@ app.use(
     origin: [
       "https://agrivision-task-ilhtckpxd-durgeshs-projects-4fe5781a.vercel.app",
       "http://localhost:3000",
-      "https://agrivision-task-bakcend-be4ws0gsk-durgeshs-projects-4fe5781a.vercel.app/",
       "https://agrivision-task.vercel.app",
     ],
     methods: ["GET"],
