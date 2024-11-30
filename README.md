@@ -8,7 +8,8 @@
 
 ## Screenshots of the application
 
-![image](https://github.com/user-attachments/assets/40e4d3b3-06c0-4c4e-9c53-e6763b57faa9)
+![image](https://github.com/user-attachments/assets/73f9a1ee-e224-4e77-b34f-5b1640b9c850)
+
 
 
 
