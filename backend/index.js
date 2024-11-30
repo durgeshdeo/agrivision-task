@@ -18,7 +18,11 @@ app.use(
       "https://agrivision-task.vercel.app",
     ],
     methods: ["GET"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+    allowedHeaders: [
+      "Content-Type",
+      "Authorization",
+      "Access-Control-Allow-Origin",
+    ],
     credentials: true,
   })
 );
