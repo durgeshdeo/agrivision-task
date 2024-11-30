@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/api/users/(.*)",
-      "dest": "/index.js"
+      "dest": "/routes/userRoutes.js"
     }
   ],
   "env": {
