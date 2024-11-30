@@ -47,7 +47,7 @@ const Nameboard = ({ users }: { users: User[] }) => {
                 {student?.totalScore}
               </div>
 
-              <div className="w-[8rem]">
+              <div className="w-[8rem] px-4">
                 <span
                   className={`text-lg ${
                     student?.rank === 1

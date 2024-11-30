@@ -9,18 +9,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-app.use(
-  cors({
-    origin: ["https://agrivision-task.vercel.app"],
-    methods: ["GET"],
-    allowedHeaders: [
-      "Content-Type",
-      "Authorization",
-      "Access-Control-Allow-Origin",
-    ],
-    credentials: true,
-  })
-);
+app.use(cors());
 
 app.use(express.json());
 
