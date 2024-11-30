@@ -59,7 +59,7 @@ Start the server
 ```
 
 ## Environmental Variables
-The folder should be made inside the backend folder
+The file should be made inside the backend folder
 MongoDB Database URL 
 ```bash
 MONGO_URL
