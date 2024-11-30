@@ -18,6 +18,7 @@ app.use(
       "https://agrivision-task.vercel.app",
     ],
     methods: ["GET"],
+    credentials: true,
   })
 );
 
