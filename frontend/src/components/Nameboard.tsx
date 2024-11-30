@@ -30,8 +30,8 @@ const Nameboard = ({ users }: { users: User[] }) => {
           </div>
         )}
         {users
-          .sort((a, b) => a.rank - b.rank)
-          .map((student, index) => (
+          ?.sort((a, b) => a.rank - b.rank)
+          ?.map((student, index) => (
             <div
               key={index}
               className="flex items-center px-6 py-4 hover:bg-gray-50 border border-solid border-gray-200 rounded-lg m-4"

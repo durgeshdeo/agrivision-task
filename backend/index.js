@@ -12,9 +12,11 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://agrivision-task-bakcend.vercel.app/?vercelToolbarCode=XeJJMERGtQEfhZe",
+      "https://agrivision-task-ilhtckpxd-durgeshs-projects-4fe5781a.vercel.app",
+      "http://localhost:3000",
+      "https://agrivision-task-bakcend-be4ws0gsk-durgeshs-projects-4fe5781a.vercel.app/",
     ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET"],
   })
 );
 
