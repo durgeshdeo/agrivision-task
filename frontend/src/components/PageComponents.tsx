@@ -13,11 +13,13 @@ import "react-toastify/dist/ReactToastify.css";
 const PageComponents = () => {
   const [users, setUsers] = useState([]);
 
+  axios.defaults.withCredentials = true;
+
   useEffect(() => {
     const fetchUsers = async () => {
       try {
         const response = await axios.get(
-          "https://agrivision-task-bakcend-be4ws0gsk-durgeshs-projects-4fe5781a.vercel.app/"
+          "https://agrivision-task-bakcend.vercel.app"
         );
         setUsers(response.data);
       } catch (error) {
