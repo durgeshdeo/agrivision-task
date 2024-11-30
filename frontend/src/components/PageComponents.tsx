@@ -13,8 +13,6 @@ import "react-toastify/dist/ReactToastify.css";
 const PageComponents = () => {
   const [users, setUsers] = useState([]);
 
-  axios.defaults.withCredentials = true;
-
   useEffect(() => {
     const fetchUsers = async () => {
       try {
