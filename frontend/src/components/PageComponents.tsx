@@ -16,7 +16,7 @@ const PageComponents = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/api/users/");
+        const response = await axios.get("https://agrivision-task.vercel.app");
         setUsers(response.data);
       } catch (error) {
         console.error("Error fetching users:", error);
