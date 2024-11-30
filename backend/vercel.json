@@ -4,16 +4,16 @@
     {
       "src": "index.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "src/**/*",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/api/users/(.*)",
-      "dest": "/routes/userRoutes.js"
+      "src": "/(.*)",
+      "dest": "/"
     }
-  ],
-  "env": {
-    "MONGO_URI": "mongodb+srv://durgeshdeo1410:WWfuS8P87GYzQMbV@cluster0.2rbm4.mongodb.net/TestResult?retryWrites=true&w=majority&appName=Cluster0",
-    "PORT": "3001"
-  }
+  ]
 }
