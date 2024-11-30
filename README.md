@@ -25,7 +25,7 @@ Go to the project directory
 Go to the backend directory
 
 ```bash
-  cd bakcend
+  cd backend
 ```
 
 Install dependencies
@@ -55,14 +55,14 @@ Install dependencies
 Start the server
 
 ```bash
-  npm start
+  npm run dev
 ```
 
 ## Environmental Variables
 The file should be made inside the backend folder
 MongoDB Database URL 
 ```bash
-MONGO_URL
+MONGO_URI
 ```
 
 Port
