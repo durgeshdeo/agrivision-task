@@ -6,6 +6,12 @@
 - **Server:** Node JS
 - **Database:** MongoDB
 
+## Screenshots of the application
+
+![image](https://github.com/user-attachments/assets/40e4d3b3-06c0-4c4e-9c53-e6763b57faa9)
+
+
+
 # Run server locally
 
 Clone the project
