@@ -9,7 +9,13 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin:
+      "https://agrivision-task-bakcend.vercel.app/?vercelToolbarCode=XeJJMERGtQEfhZe",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
 
 app.use(express.json());
 
