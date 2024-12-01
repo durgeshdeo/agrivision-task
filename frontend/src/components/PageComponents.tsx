@@ -17,7 +17,7 @@ const PageComponents = () => {
     const fetchUsers = async () => {
       try {
         const response = await axios.get(
-          "https://agrivision-task-backend.onrender.com"
+          "https://agrivision-task-backend.onrender.com/api/users"
         );
         setUsers(response.data);
       } catch (error) {
