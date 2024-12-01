@@ -16,7 +16,7 @@ const PageComponents = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("https://agrivision-task.vercel.app");
+        const response = await axios.get("http://localhost:3001/api/users");
         setUsers(response.data);
       } catch (error) {
         console.error("Error fetching users:", error);
@@ -28,29 +28,31 @@ const PageComponents = () => {
   }, []);
 
   return (
-    <div className="w-[95%] mx-auto flex xl:flex-row flex-col gap-6  rounded-md mb-8">
+    <>
       <ToastContainer />
-      <div className="w-full xl:w-[30%] flex flex-col gap-6">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:max-h-[35rem] gap-6 xl:hidden">
-          <LeaderboardProfile users={users} />
-          <Nameboard users={users} />
+      <div className="w-[95%] mx-auto flex xl:flex-row flex-col gap-6  rounded-md mb-8">
+        <div className="w-full xl:w-[30%] flex flex-col gap-6">
+          <div className="flex flex-col xl:flex-row items-center justify-between xl:max-h-[35rem] gap-6 xl:hidden">
+            <LeaderboardProfile users={users} />
+            <Nameboard users={users} />
+          </div>
+          <Score users={users} />
+          <TimeComparison users={users} subheading={""} headingPart={""} />
+          <TimeComparison
+            headingPart={"per question"}
+            users={users}
+            subheading={"Advised maximun time (per question) is 36sec"}
+          />
         </div>
-        <Score users={users} />
-        <TimeComparison users={users} subheading={""} headingPart={""} />
-        <TimeComparison
-          headingPart={"per question"}
-          users={users}
-          subheading={"Advised maximun time (per question) is 36sec"}
-        />
-      </div>
-      <div className="w-full xl:w-[70%] flex flex-col">
-        <div className="xl:flex flex-col xl:flex-row justify-between xl:max-h-[35rem] gap-6 hidden">
-          <LeaderboardProfile users={users} />
-          <Nameboard users={users} />
+        <div className="w-full xl:w-[70%] flex flex-col">
+          <div className="xl:flex flex-col xl:flex-row justify-between xl:max-h-[35rem] gap-6 hidden">
+            <LeaderboardProfile users={users} />
+            <Nameboard users={users} />
+          </div>
+          <MarkAnalysis users={users} />
         </div>
-        <MarkAnalysis users={users} />
       </div>
-    </div>
+    </>
   );
 };
 
