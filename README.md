@@ -66,7 +66,7 @@ Start the server
   npm run dev
 ```
 
-## Environmental Variables
+## Environment Variables
 The file should be made inside the backend folder
 MongoDB Database URL 
 ```bash
